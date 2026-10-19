@@ -1,0 +1,30 @@
+{
+  "name": "El presidente y la bomba - Juego de fiesta",
+  "short_name": "La bomba",
+  "description": "Dos salas, rondas cronometradas e intercambio de rehenes: salva al presidente o hazlo volar.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080a12",
+  "theme_color": "#080a12",
+  "lang": "es",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

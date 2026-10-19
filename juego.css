@@ -1,0 +1,35 @@
+/* El presidente y la bomba: lo propio del juego (lo común está en style.css) */
+.my-room { margin: 4px 0 10px; text-align: center; font-size: 1.05rem; }
+.show-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0 14px; }
+.show-btn { appearance: none; font: inherit; font-weight: 700; color: var(--text); background: var(--surface-strong); border: 1px solid var(--border-strong); border-radius: var(--radius-lg); padding: 16px 10px; display: flex; flex-direction: column; align-items: center; gap: 2px; cursor: pointer; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; touch-action: none; }
+.show-btn small { font-weight: 500; color: var(--muted); font-size: .78rem; }
+.show-btn:active { transform: scale(.97); }
+.show-overlay { position: fixed; inset: 0; z-index: 90; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; color: #fff; pointer-events: none; padding: 24px; }
+.show-overlay.is-azul { background: #1d4ed8; }
+.show-overlay.is-rojo { background: #b91c1c; }
+.show-overlay.is-gris { background: #52525b; }
+.show-overlay .show-emoji { font-size: 6rem; line-height: 1; }
+.show-overlay strong { font-family: var(--font-display); font-size: clamp(2.4rem, 12vw, 4.5rem); line-height: 1.05; }
+.show-overlay small { font-size: 1.2rem; opacity: .85; }
+.room-switch { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0 12px; }
+.room-pill { appearance: none; font: inherit; font-weight: 600; padding: 10px; border-radius: 999px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); cursor: pointer; }
+.room-pill.is-on { background: var(--accent); border-color: var(--accent); color: #fff; opacity: 1; }
+.room-pill.is-azul.is-on { background: #2563eb; border-color: #2563eb; }
+.room-pill.is-rojo.is-on { background: #dc2626; border-color: #dc2626; }
+.two-rooms { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0 14px; }
+.room-col { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 10px; text-align: left; min-width: 0; }
+.room-col-title { margin: 0 0 6px; font-weight: 700; text-align: center; }
+.room-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.room-col li { padding: 4px 8px; border-radius: 8px; background: var(--surface-strong); font-size: .9rem; overflow-wrap: anywhere; }
+.room-col li small { display: block; font-size: .75rem; color: var(--muted); }
+.room-col li.is-azul { box-shadow: inset 3px 0 0 #3b82f6; }
+.room-col li.is-rojo { box-shadow: inset 3px 0 0 #ef4444; }
+.room-col li.is-gris { box-shadow: inset 3px 0 0 #a1a1aa; }
+.room-edit { display: flex; flex-direction: column; gap: 4px; margin-top: 10px; }
+.room-edit-row { display: grid; grid-template-columns: 1fr 1.4fr; align-items: center; gap: 8px; }
+.room-edit-row span { overflow-wrap: anywhere; text-align: left; }
+.room-edit-row .room-switch { margin: 0; }
+.room-edit-row .room-pill { padding: 6px; font-size: .85rem; }
+.verdict.boom { animation: shake .6s ease 1; }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-8px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(5px); } }
+.btn + .btn { margin-top: 10px; }

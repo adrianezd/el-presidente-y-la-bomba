@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Bomba entre dos salas">
+  <defs><clipPath id="c"><rect width="64" height="64" rx="14"/></clipPath></defs>
+  <g clip-path="url(#c)"><rect width="32" height="64" fill="#1d3b8a"/><rect x="32" width="32" height="64" fill="#8a1d1d"/></g>
+  <circle cx="30" cy="38" r="15" fill="#11131b" stroke="#e5e7eb" stroke-width="2"/>
+  <path d="M38 25 q6 -8 12 -6" fill="none" stroke="#e5e7eb" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="51" cy="18" r="4" fill="#fbbf24"/>
+</svg>
